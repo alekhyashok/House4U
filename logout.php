@@ -1,0 +1,9 @@
+<?php 
+session_start();
+session_destroy();
+session_register_shutdown();
+session_abort();
+unset($_SESSION['oemail']);
+unset($_SESSION['person']);
+header('Location:index.php');
+?>
